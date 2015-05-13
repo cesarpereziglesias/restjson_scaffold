@@ -1,0 +1,3 @@
+include *.txt *.md *.rst
+recursive-include restjson *.*_tmpl *.txt *.py
+global-exclude *.pyc *~
