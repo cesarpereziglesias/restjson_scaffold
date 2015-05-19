@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 from pyramid.view import view_config
 
-class {{project_cc}}:
+from ..views import View
 
-    def __init__(self, request):
-        self._request = request
+class {{project_cc}}(View):
 
-    @view_config(route_name='{{project_cc}}', renderer='json')
+    @view_config(route_name='{{project_cc}}')
     def list(self):
         return {'project': '{{project}}'}
